@@ -8,3 +8,8 @@ resource "aws_s3_bucket" "MyBucket" {
 
 
 }
+
+output "name" {
+    value = aws_s3_bucket.MyBucket.arn
+  
+}
